@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Modulo de Twitter</name>
+    <author>Emesa</author>
+    <version>1.0.0</version>
+    <description>Modulo de Twitter que se muestra una pagina...</description>
+    <files>
+        <filename>mod_estwitter.xml</filename>
+        <scriptfile>script.php</scriptfile>
+        <filename module="mod_estwitter">mod_estwitter.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>    
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="nombre_usuario"
+                    type="text"
+                    label="Tu nombre de usuario: @"                   
+                    />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
+
+
+
